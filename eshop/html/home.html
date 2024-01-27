@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<!-- Created by CodingLab |www.youtube.com/CodingLabYT-->
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <title> STYR - ຊັອບຢ່າງມີສະຕາຍ </title>
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="shortcut icon" type="image/png" href="img/styr_favicon.png">
+    <!-- Boxicons CDN Link -->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://unpkg.com/@coreui/icons/css/all.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+<!-- Sidebar -->
+    <div class="sidebar">
+        <div class="logo-details">
+            <i class='bx bx-cart icon'></i>
+            <div class="logo_name">STYR</div>
+            <i class='bx bx-menu' id="btn"></i>
+        </div>
+        <!-- Nav Bar -->
+        <ul class="nav-list">
+            <li>
+                <i class='bx bx-search'></i>
+                <input type="text" placeholder="ຄົ້ນຫາ...">
+                <span class="tooltip">ຄົ້ນຫາ</span>
+            </li>
+            <li>
+                <a href="home.html">
+                    <i class="fa-solid fa-house"></i>
+                    <span class="links_name">ຫນ້າຫລັກ</span>
+                </a>
+                <span class="tooltip">ຫນ້າຫລັກ</span>
+            </li>
+            <li>
+                <a href="login.html">
+                    <i class="fa-solid fa-right-to-bracket"></i>
+                    <span class="links_name">ເຂົ້າສູ່ລະບົບ</span>
+                </a>
+                <span class="tooltip">ເຂົ້າສູ່ລະບົບ</span>
+            </li>
+            <li>
+                <a href="shopping.html">
+                    <i class="fa-solid fa-shop"></i>
+                    <span class="links_name">ຮ້ານຄ້າ</span>
+                </a>
+                <span class="tooltip">ຮ້ານຄ້າ</span>
+            </li>
+            <li>
+                <a href="basket.html">
+                    <i class='fa-solid fa-basket-shopping'></i>
+                    <span class="links_name">ກະຕ່າ</span>
+                </a>
+            </li>
+           
+            <li>
+                <a href="#">
+                    <i class="fa-solid fa-gear"></i>
+                    <span class="links_name">ຕັ້ງຄ່າ</span>
+                </a>
+                <span class="tooltip">ຕັ້ງຄ່າ</span>
+            </li>
+            <li class="profile">
+                <div class="profile-details">
+                </div>
+                <i class='bx bx-log-out' id="log_out"></i>
+            </li>
+            <li>
+                <a href="about.html">
+                    <i class="fa-solid fa-circle-info"></i>
+                    <span class="links_name">ກ່ຽວກັບ</span>
+                </a>
+                <span class="tooltip">ກ່ຽວກັບ</span>
+            </li>
+        </ul>
+    </div>
+<!-- Home -->
+    <section class="home-section">
+        <img id="styr_logo" src="img/STYR_LOGO.png">
+        <div class="ad_banner">
+            <img id="ad_banner" src="img/kosana.jpg" alt="Advertise_banner">
+        </div>
+        <h1 class="pheading">ສິນຄ້າມາແຮງ</h1>
+<!-- Gallery -->
+        <div class="gallery">
+            <div class="content">
+                <img src="img/c14.jpg" alt="">
+                <h3>ເສື້ອແຂນຍາວ</h3>
+                <p>ສຳຫລັບຜູ້ຊາຍ <br> ຂະຫນາດ: S M L XL </p>
+                <h6>299.000 ກີບ</h6>
+                <ul>
+                    <li><i class="fa fa-star checked"></i></li>
+                    <li><i class="fa fa-star checked"></i></li>
+                    <li><i class="fa fa-star "></i></li>
+                    <li><i class="fa fa-star "></i></li>
+                    <li><i class="fa fa-star "></i></li>
+                </ul>
+                <button class="buy-1"><a class="a" href="#">Buy Now</a></button>
+            </div>
+            <div class="content">
+                <img src="img/c13.jpg" alt="">
+                <h3>ເສື້ອແຂນຍາວ</h3>
+                <p>ສຳຫລັບຜູ້ຊາຍ <br> ຂະຫນາດ: S M L XL </p>
+                <h6>185.000 ກີບ</h6>
+                <ul>
+                    <li><i class="fa fa-star checked"></i></li>
+                    <li><i class="fa fa-star checked"></i></li>
+                    <li><i class="fa fa-star checked"></i></li>
+                    <li><i class="fa fa-star "></i></li>
+                    <li><i class="fa fa-star "></i></li>
+                </ul>
+                <button class="buy-2"><a class="a" href="#">Buy Now</a></button>
+            </div>
+            <div class="content">
+                <img src="img/c8.jpg" alt="">
+                <h3>ເກີບນັກຮຽນ</h3>
+                <p>ສຳຫລັບຜູ້ຍີງ <br> Size: 36 37 38 39 40 </p>
+                <h6>195.000 ກີບ</h6>
+                <ul>
+                    <li><i class="fa fa-star checked"></i></li>
+                    <li><i class="fa fa-star "></i></li>
+                    <li><i class="fa fa-star "></i></li>
+                    <li><i class="fa fa-star "></i></li>
+                    <li><i class="fa fa-star "></i></li>
+                </ul>
+                <button class="buy-3"><a class="a" href="#">Buy Now</a></button>
+            </div>
+            <div class="content">
+                <img src="img/c18.jpg" alt="">
+                <h3> ຊູດໂສ້ງ-ເສື້ອ </h3>
+                <p>ສຳຫລັບຜູ້ຍີງ <br> ຂະຫນາດ: S M L XL </p>
+                <h6>259.000 ກີບ</h6>
+                <ul>
+                    <li><i class="fa fa-star checked"></i></li>
+                    <li><i class="fa fa-star checked"></i></li>
+                    <li><i class="fa fa-star checked"></i></li>
+                    <li><i class="fa fa-star "></i></li>
+                    <li><i class="fa fa-star "></i></li>
+                </ul>
+                <button class="buy-4"><a class="a" href="#">Buy Now</a></button>
+            </div>
+            <div class="content">
+                <img src="img/c6.jpg" alt="">
+                <h3>ໂມງຜູ້ຍີງ</h3>
+                <p> ສຳຫລັບຜູ້ຍີງ <br>// </p>
+                <h6>120.000 ກີບ</h6>
+                <ul>
+                    <li><i class="fa fa-star checked"></i></li>
+                    <li><i class="fa fa-star "></i></li>
+                    <li><i class="fa fa-star "></i></li>
+                    <li><i class="fa fa-star "></i></li>
+                    <li><i class="fa fa-star "></i></li>
+                </ul>
+                <button class="buy-5"><a class="a" href="#">Buy Now</a></button>
+            </div>
+            <div class="content">
+                <img src="img/c3.jpg" alt="">
+                <h3>ກະເປົາເດີນທາງ</h3>
+                <p> ໄດ້ທັ້ງຍີງ ແລະ ຊາຍ <br>//</p>
+                <h6>140.000 ກີບ</h6>
+                <ul>
+                    <li><i class="fa fa-star checked"></i></li>
+                    <li><i class="fa fa-star checked"></i></li>
+                    <li><i class="fa fa-star checked"></i></li>
+                    <li><i class="fa fa-star "></i></li>
+                    <li><i class="fa fa-star "></i></li>
+                </ul>
+                <button class="buy-6"><a class="a" href="#">Buy Now</a></button>
+            </div>
+            <div class="content">
+                <img src="img/c5.jpg" alt="">
+                <h3>ກະເປົາເປ້</h3>
+                <p> ໄດ້ທັ້ງຍີງ ແລະ ຊາຍ <br>//</p>
+                <h6>250.000 ກີບ</h6>
+                <ul>
+                    <li><i class="fa fa-star checked"></i></li>
+                    <li><i class="fa fa-star checked"></i></li>
+                    <li><i class="fa fa-star checked"></i></li>
+                    <li><i class="fa fa-star "></i></li>
+                    <li><i class="fa fa-star "></i></li>
+                </ul>
+                <button class="buy-7"><a class="a" href="#">Buy Now</a></button>
+            </div>
+            <div class="content">
+                <img src="img/c16.jpg" alt="">
+                <h3>ເກີບຜ້າ</h3>
+                <p> ສຳຫລັບຜູ້ຍີງ <br> ຂະຫນາດ: 42,43,44</p>
+                <h6>215.000 ກີບ</h6>
+                <ul>
+                    <li><i class="fa fa-star checked"></i></li>
+                    <li><i class="fa fa-star checked"></i></li>
+                    <li><i class="fa fa-star "></i></li>
+                    <li><i class="fa fa-star "></i></li>
+                    <li><i class="fa fa-star "></i></li>
+                </ul>
+                <button class="buy-8"><a class="a" href="#">Buy Now</a></button>
+            </div>
+        </div>
+    </section>
+
+    <script src="js/home.js">
+
+    </script>
+</body>
+
+</html>

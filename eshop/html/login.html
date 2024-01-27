@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>STYR - ເຂົ້າສູ່ລະບົບ</title>
+	<link rel="shortcut icon" type="image/png" href="img/styr_favicon.png">
+	<link rel="stylesheet" href="css/login.css">
+	<link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.2.0/css/all.css'>
+	<link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.2.0/css/fontawesome.css'>
+</head>
+<body>
+<!-- login container -->
+<div class="container">
+	<div class="screen">
+		<div class="screen__content">
+			<img src="img/STYR_Logo.png">
+			<form class="login">
+				<h2>ເຂົ້າສູ່ລະບົບ</h2>
+				<div class="login__field">
+					<i class="login__icon fas fa-user"></i>
+					<input type="text" class="login__input" placeholder="ຊື່ຜູ້ໃຊ້, ອີເມວ..." required>
+				</div>
+				<div class="login__field">
+					<i class="login__icon fas fa-lock"></i>
+					<input type="password" id="login_password" class="login__input" placeholder="ລະຫັດຜ່ານ..." required>
+					<span id="password-toggle" class="password-toggle-icon"><i class="fas fa-eye"></i></span>
+				</div>
+				<button class="button login__submit">
+					<span class="button__text">ເຂົ້າສູ່ລະບົບ</span>
+					<i class="button__icon fas fa-chevron-right"></i>
+				</button>				
+			</form>
+			<div class="social-login">
+				<a id="register" href="register.html">ລົງທະບຽນຜູ້ໃຊ້ໃໝ່</a>
+				<div class="social-icons">
+					<a href="#" class="social-login__icon fab fa-instagram"></a>
+					<a href="#" class="social-login__icon fab fa-facebook"></a>
+					<a href="#" class="social-login__icon fab fa-twitter"></a>
+				</div>
+			</div>
+		</div>
+		<div class="screen__background">
+			<span class="screen__background__shape screen__background__shape4"></span>
+			<span class="screen__background__shape screen__background__shape3"></span>		
+			<span class="screen__background__shape screen__background__shape2"></span>
+			<span class="screen__background__shape screen__background__shape1"></span>
+		</div>		
+	</div>
+</div>
+<!-- Password eye toggle-->
+<script>
+	document.getElementById('password-toggle').addEventListener('click', function() {
+		var passwordField = document.getElementById('login_password');
+		var icon = document.querySelector('#password-toggle i');
+		
+		if (passwordField.type === "password") {
+			passwordField.type = "text";
+			icon.classList.remove('fa-eye');
+			icon.classList.add('fa-eye-slash');
+		} else {
+			passwordField.type = "password";
+			icon.classList.remove('fa-eye-slash');
+			icon.classList.add('fa-eye');
+		}
+	});
+	</script>
+</body>
+</html>

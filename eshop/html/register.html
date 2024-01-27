@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STYR - ລົງທະບຽນຜູ້ໃຊ້ໃໝ່</title>
+    <link rel="shortcut icon" type="image/png" href="img/styr_favicon.png">
+    <link rel="stylesheet" href="css/register.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.2.0/css/all.css'>
+    <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.2.0/css/fontawesome.css'>
+</head>
+
+<body>
+<!-- Container -->
+<div class="container">
+    <!-- Screen -->
+    <div class="screen">
+        <div class="screen__content">
+            <img src="img/STYR_Logo.png">
+        <!--Register form-->
+            <form class="register-form">
+                    <h2>ລົງທະບຽນຜູ້ໃຊ້ໃໝ່</h2>
+                <!-- Username -->
+                    <div class="register-field">
+                        <i class="fa fa-user lock"></i>
+                        <input class="input-surname" type="text" placeholder="ຊື່ບັນຊີ..." required >
+                        </span>
+                    </div>
+                <!-- Email -->
+                    <div class="register-field">
+                        <i class="fa fa-envelope email lock"></i>
+                        <input class="input-email" type="email" placeholder="ອິເມວ..." required >
+                    </div>
+                <!-- Phone Number -->
+                    <div class="register-field">
+                        <i class="fa fa-phone lock"></i>
+                        <input class="input-phone" type="text" placeholder="ເບີໂທລະສັບ..." required >
+                    </div>
+                <!-- Users' Address -->
+                    <div class="register-field">
+                        <i class="fa fa-home lock"></i>
+                        <input class="input-address" type="text" placeholder="ທີ່ຢູ່..." required >
+                    </div>
+                <!-- District Selection -->
+                    <div class="register-field">
+                        <select class="select-country">
+                            <option>ເລືອກເມືອງ</option>
+                            <option>Select</option>
+                            <option>Select</option>
+                            <option>Select</option>
+                            <option>Select</option>
+                            <option>Select</option>
+                        </select>
+                    </div>
+                <!-- Password -->
+                    <div class="register-field">
+                        <i class="fa fa-lock lock"></i>
+                        <input type="password" id="password" placeholder="ລະຫັດຜ່ານ..." required class="input-password">
+                        <span class="toggle-password" onclick="togglePassword('password')">
+                        <i class="fa fa-eye" id="togglePasswordIcon"></i>
+                        </span>
+                    </div>
+                <!-- Confirm Password -->
+                    <div class="register-field">
+                        <i class="fa fa-lock lock"></i>
+                        <input type="password" id="confirm-password" placeholder="ຢືນຢັນລະຫັດຜ່ານ..." required class="input-confirm-password">
+                        <span class="toggle-password" onclick="togglePassword('confirm-password')">
+                        <i class="fa fa-eye" id="toggleConfirmPasswordIcon"></i>
+                        </span>
+                    </div>
+                <!-- Button -->
+                    <div class="register-field">
+                    </div>
+                    <button id="btn" class="button submit-button">
+                        <span class="button__text">ລົງທະບຽນ</span>
+                        <i class="button__icon fas fa-chevron-right"></i>
+                    </button>
+                    <div class="social-login">
+                        <a id="register" href="login.html">ມີບັນຊີຢູ່ແລ້ວ? ເຂົ້າສູ່ລະບົບເລີຍ</a>
+                    </div>  
+            </form>
+        <!-- Background shape -->
+            <div class="screen__background">
+                <span class="screen__background__shape screen__background__shape4"></span>
+                <span class="screen__background__shape screen__background__shape3"></span>
+                <span class="screen__background__shape screen__background__shape2"></span>
+                <span class="screen__background__shape screen__background__shape1"></span>
+            </div>
+         </div>  
+    </div>
+</div>
+<!-- Eyes toggle for password -->
+    <script>
+        function togglePassword(inputId) {
+            var input = document.getElementById(inputId);
+            var icon = document.getElementById("toggle" + inputId.charAt(0).toUpperCase() + inputId.slice(1) + "Icon");
+        
+            if (input.type === "password") {
+                input.type = "text";
+                icon.classList.remove("fa-eye");
+                icon.classList.add("fa-eye-slash");
+            } else {
+                input.type = "password";
+                icon.classList.remove("fa-eye-slash");
+                icon.classList.add("fa-eye");
+            }
+        }
+    </script>
+</body>
+</html>

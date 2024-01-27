@@ -1,0 +1,271 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,700');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: PBChampasak-Regular;
+}
+
+body {
+    background: linear-gradient(90deg, #C7C5F4, #776BCC);
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    background-image: url("img/store.jpg");
+    background-size: cover;
+}
+
+.container {
+    padding: 5vh;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.screen {
+    background: linear-gradient(90deg, #5D54A4, #9e9ad4);
+    position: relative;
+    height: auto;
+    width: auto;
+    box-shadow: 0px 0px 24px #5C5696;
+    border-radius: 30px;
+}
+
+.screen img {
+	position: relative;
+	z-index: 2;
+	width: 200px;
+	height: auto;
+	display: flex;
+	align-items: center;
+	margin: auto;
+	margin-top: 50px;
+}
+
+.screen__content {
+    position: relative;
+    height: auto;
+    width: auto;
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+    z-index: 0;
+}
+
+.screen__background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 0;
+    -webkit-clip-path: inset(0 0 0 0);
+    clip-path: inset(0 0 0 0);
+	overflow: hidden;
+}
+
+.screen__background__shape {
+    transform: rotate(45deg);
+    position: absolute;
+    z-index: -1; /* Move the background shape behind other content */
+}
+
+.screen__background__shape1 {
+    height: 650px;
+    width: 820px;
+    background: #FFF;
+    top: 10%;
+    right: 100px;
+    border-radius: 0 72px 0 0;
+}
+
+.screen__background__shape2 {
+    height: 220px;
+    width: 500px;
+    background: #6C63AC;
+    left: 0px;
+    bottom: 90%;
+    border-radius: 32px;
+}
+
+.screen__background__shape3 {
+    height: 540px;
+    width: 300px;
+    background: linear-gradient(270deg, #5D54A4, #6A679E);
+    top: 30%;
+    left: 150px;
+    border-radius: 32px;
+}
+
+.screen__background__shape4 {
+    height: 500px;
+    width: 200px;
+    background: #7E7BB9;
+    top: 80%;
+    left: 190px;
+    border-radius: 60px;
+}
+
+
+.register-form {
+    z-index: 2;
+    width: 60vh;
+    height: auto;
+    padding: 30px;
+    padding-top: 50px;
+}
+
+.register-form h2 {
+    color: #4C489D;
+    font-size: 5vh;
+    align-content: center;
+    font-weight: 600;
+}
+
+.input-group .input-name {
+    margin-bottom: 3vh;
+}
+
+.radio-button {
+    display: inline-block;
+    margin-right: 20px; /* Adjust as needed */
+}
+
+.radio-button label {
+    display: inline-block;
+    margin-right: 10px; /* Adjust as needed */
+}
+
+.register-field {
+    padding: 20px 0px;
+    position: relative;
+}
+
+.register-field input::placeholder  {
+    color: #040054;
+    opacity: 70%;
+}
+
+.register-field i {
+    position: absolute;
+    top: 30px;
+    color: #7875B5;
+}
+
+.register-field .select-country {
+    color: #040054;
+    opacity: 70%;
+    font-weight: 500;
+} 
+.register-field .select-country option {
+    color: black;
+} 
+div .arrow {
+    color: #fff;
+}
+
+.register-field i {
+    color: #7875B5;
+}
+
+.register-field input, 
+.register-field select {
+    color: #040054;
+    border: none;
+    border-bottom: 2px solid #D1D1D4;
+    background: none;
+    padding: 10px;
+    padding-left: 24px;
+    width: 100%;
+    font-weight: 600;
+    transition: .2s;
+}
+
+.register-field input:active,
+.register-field input:focus,
+.register-field input:hover,
+.register-field select:active,
+.register-field select:focus,
+.register-field select:hover {
+    outline: none;
+    border-bottom-color: #6A679E;
+}
+
+.toggle-password {
+    right: 20px;
+    bottom: 20px;
+    position: relative;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.toggle-password i{
+    color: #fff;
+}
+
+
+.button {
+    background: #fff;
+    font-size: 14px;
+    padding: 16px 20px;
+    border-radius: 26px;
+    border: 1px solid #D4D3E8;
+    text-transform: uppercase;
+    font-weight: 800;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    color: #4C489D;
+    box-shadow: 0px 2px 2px #5C5696;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.button:active,
+.button:focus,
+.button:hover {
+    transition: linear 0.5s;
+    color: white;
+    background-color: #4C489D;
+    border-color: #6A679E;
+    outline: none;
+}
+
+.button__icon {
+    position: relative;
+    font-size: 24px;
+    margin-left: auto;
+    color: #7875B5;
+}
+.button:hover {
+    color: white;
+    background-color: #4C489D;
+    border-color: #6A679E;
+}
+
+.button:hover .button__icon {
+    color: white;
+}
+
+
+div .social-login {
+    display: flex;
+    padding-top: 5vh;
+	text-align: center;
+    justify-content: center;
+	color: #fff;
+}
+
+.social-login a {
+	color: #fff;
+	text-decoration: none;
+}
+.social-login a:hover{
+	transition: all 0.5s;
+	color: #040054;
+}
+
